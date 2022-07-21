@@ -1,7 +1,7 @@
 /*
 爱奇艺会员签到脚本
 
-更新时间: 2022.1.28
+更新时间: 2022.06.18
 脚本兼容: QuantumultX, Surge4, Loon, JsBox, Node.js
 电报频道: @NobyDa
 问题反馈: @NobyDa_bot
@@ -25,7 +25,7 @@ JsBox, Node.js用户获取Cookie说明：
 方法二PC：网页登录 https://www.iqiyi.com 按F12控制台执行 console.log(document.cookie) 复制打印的Cookie填入以下脚本变量或环境变量中即可
 */
 
-var cookie = 'QC005=7418a5c0f820f1b50be850032c67b7b0; __uuid=e628c3a1-236c-5ba3-9a38-ed2035e74fd0; QC006=46f33347918ff045656d4b926fa13783; QP0030=1; T00404=a02d4de95a4ce48a7ade83ba590a436a; QC173=0; QC124=1%7C0; idx=%7B%22ip%22%3A%22113X124X137X7%22%2C%22geocode%22%3A%221156370700%22%2C%22exptime%22%3A1634292826%7D; QP007=60; QC159=%7B%22color%22%3A%22FFFFFF%22%2C%22channelConfig%22%3A0%2C%22isOpen%22%3A1%2C%22speed%22%3A10%2C%22density%22%3A40%2C%22opacity%22%3A86%2C%22isFilterColorFont%22%3A1%2C%22isOpenMask%22%3A0%2C%22proofShield%22%3A0%2C%22forcedFontSize%22%3A24%2C%22isFilterImage%22%3A1%2C%22defaultSwitch%22%3A0%2C%22hideRoleTip%22%3A1%7D; QC021=%5B%7B%22key%22%3A%22%E9%A3%8E%E8%B5%B7%E6%B4%9B%E9%98%B3%22%7D%2C%7B%22key%22%3A%22%E8%B0%81%E6%98%AF%E5%87%B6%E6%89%8B%22%7D%2C%7B%22key%22%3A%22%E6%88%91%E7%9A%84%E6%A2%A6%E6%83%B3%EF%BC%8C%E6%88%91%E7%9A%84%E9%80%89%E6%8B%A9%20%E2%80%94%E2%80%94%202021%E9%9B%B7%E5%86%9B%E5%B9%B4%E5%BA%A6%E6%BC%94%E8%AE%B2%22%7D%5D; agreementUpdate=V1; P00004=.1639227025.9c59174f29; Hm_lvt_53b7374a63c37483e5dd97d78d9bb36e=1642984544,1643025186; QC008=1628594998.1643025180.1645328568.7; QC007=DIRECT; IMS=IggQABj_ysmQBioqCiAyMmMyODkyNDMwMDc1ZTFmOTNlODkyNjg3YmIxNDcyNxAAIgAoQDAFMAAwADAAMAByJAogMjJjMjg5MjQzMDA3NWUxZjkzZTg5MjY4N2JiMTQ3MjcQAIIBAIoBJAoiCiAyMmMyODkyNDMwMDc1ZTFmOTNlODkyNjg3YmIxNDcyNw; nu=0; QC180=true; P1111129=1645328666; P00001=36m3m1Z1hOWPgBMm2AZUv8J4AZpUhHLFeZ9GX5Mgm2jIdst1k8N8QTjA9KCU92s3eRbfm39f1; P00003=1570650521; P00010=1570650521; P01010=1645372800; P00007=36m3m1Z1hOWPgBMm2AZUv8J4AZpUhHLFeZ9GX5Mgm2jIdst1k8N8QTjA9KCU92s3eRbfm39f1; P00PRU=1570650521; P00037=A00000; QC170=1; QC179=%7B%22vipTypes%22%3A%221%22%2C%22userIcon%22%3A%22%2F%2Fimg7.iqiyipic.com%2Fpassport%2F20190128%2F6d%2Fe0%2Fpassport_1570650521_154868291970285_130_130.jpg%22%2C%22iconPendant%22%3A%22%22%2C%22uid%22%3A1570650521%7D; QC175=%7B%22upd%22%3Atrue%2C%22ct%22%3A1645328667542%7D; QC163=1; QYABEX={"mergedAbtest":"1707_B,1550_B","PCW-Home-List":{"value":"1","abtest":"1707_B"},"pcw_home_hover":{"value":"1","abtest":"1550_B"}}; QP0013=1; QC010=149968050; __dfp=a1e66ff433a9ca48528d91d700356c43f69b1721d2cf8b1b970cdfe3468ae2d3bd@1646624569385@1645328570385; P00002=%7B%22uid%22%3A%221570650521%22%2C%22pru%22%3A1570650521%2C%22user_name%22%3A%22133****8604%22%2C%22nickname%22%3A%22%5Cu559c%5Cu6b22%5Cu6454%5Cu8de4%5Cu7684%5Cu53d4%5Cu5b59%5Cu60dc%5Cu96ea%22%2C%22pnickname%22%3A%22%5Cu559c%5Cu6b22%5Cu6454%5Cu8de4%5Cu7684%5Cu53d4%5Cu5b59%5Cu60dc%5Cu96ea%22%2C%22type%22%3A11%2C%22email%22%3Anull%7D'; //单引号内填入手动获取的Cookie
+var cookie = 'H5_AB=e; QC006=42523bd9475bbce753dd8d3f84e2d13c; QCH001=1; Hm_lvt_5df871ab99f94347b23ca224fc7d013f=1658278362; QC007=DIRECT; QC008=5836bc326c3a7527762557f084120dbb; __uuid=c65f7014-a437-2d97-2169-88bff5209d95; P00004=.1658278381.c5d8e4d4e4; QC005=1e31d7582b3a8053b5bb3dbaa10c4d3a; P00001=d7xjbwI5m1LXtYHvgcNJOPxQPfDivsZqeKdgUHzWyPI5tolVRxTy4sc80KOTXjm3ZQqRf9; P00003=1570650521; P00010=1570650521; P01010=1658332800; P00007=d7xjbwI5m1LXtYHvgcNJOPxQPfDivsZqeKdgUHzWyPI5tolVRxTy4sc80KOTXjm3ZQqRf9; P00PRU=1570650521; H_RENEW_COUNT=1658278397862; app_server_fail_num=2; app_server_retry_time=1; Hm_lpvt_5df871ab99f94347b23ca224fc7d013f=1658362211; __dfp=e12d5442fd2789427194e6bb58bc28a2681084bc2239e92208fb1866c7cba93b9a@1659574369930@1658278370930; P00002=%7B%22uid%22%3A%221570650521%22%2C%22pru%22%3A1570650521%2C%22user_name%22%3A%22133****8604%22%2C%22nickname%22%3A%22%5Cu559c%5Cu6b22%5Cu6454%5Cu8de4%5Cu7684%5Cu53d4%5Cu5b59%5Cu60dc%5Cu96ea%22%2C%22pnickname%22%3A%22%5Cu559c%5Cu6b22%5Cu6454%5Cu8de4%5Cu7684%5Cu53d4%5Cu5b59%5Cu60dc%5Cu96ea%22%2C%22type%22%3A11%2C%22email%22%3Anull%7D'; //单引号内填入手动获取的Cookie
 
 var barkKey = ''; //Bark APP 通知推送Key
 
@@ -40,7 +40,7 @@ QuantumultX 远程脚本配置:
 
 [rewrite_local]
 # 获取Cookie
-^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+^https:\/\/passport\.iqiyi\.com\/apis\/user\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 [mitm]
 hostname= passport.iqiyi.com
@@ -51,7 +51,7 @@ Surge 4.2.0+ 脚本配置:
 [Script]
 爱奇艺签到 = type=cron,cronexp=0 9 * * *,timeout=120,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
-爱奇艺获取Cookie = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+爱奇艺获取Cookie = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 [MITM]
 hostname= passport.iqiyi.com
@@ -65,7 +65,7 @@ Loon 2.1.0+ 脚本配置:
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 # 获取Cookie
-http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 [Mitm]
 hostname= passport.iqiyi.com
@@ -202,16 +202,24 @@ function Checkin() {
       body: JSON.stringify(post_date)
     }
     $nobyda.post(URL, function(error, response, data) {
-      let CheckinMsg;
+      let CheckinMsg, rewards = [];
       const Details = LogDetails ? `msg:\n${data||error}` : '';
       try {
       	if (error) throw new Error(`接口请求出错 ‼️`);
         const obj = JSON.parse(data)
         if (obj.code === "A00000") {
           if (obj.data.code === "A0000") {
-            var quantity = obj.data.data.rewards[0].rewardCount;
+          for(let i = 0; i < obj.data.data.rewards.length; i++) {
+          if (obj.data.data.rewards[i].rewardType == 1) {
+          rewards.push(`成长值+${obj.data.data.rewards[i].rewardCount}`)
+          } else if (obj.data.data.rewards[i].rewardType == 2) {
+          rewards.push(`VIP天+${obj.data.data.rewards[i].rewardCount}`)
+          } else if (obj.data.data.rewards[i].rewardType == 3) {
+          rewards.push(`积分+${obj.data.data.rewards[i].rewardCount}`)
+          }
+          }
             var continued = obj.data.data.signDays;
-            CheckinMsg = `应用签到: 获得积分${quantity}, 累计签到${continued}天 🎉`;
+            CheckinMsg = `应用签到: ${rewards.join(", ")}${rewards.length<3?`, 累计签到${continued}天`:``} 🎉`;
           } else {
             CheckinMsg = `应用签到: ${obj.data.msg} ⚠️`;
           }
@@ -264,7 +272,7 @@ function WebCheckin() {
           if (obj.data[0].code === "A0000") {
             var quantity = obj.data[0].score;
             var continued = obj.data[0].continuousValue;
-            WebCheckinMsg = "网页签到: 获得积分" + quantity + ", 累计签到" + continued + "天 🎉"
+            WebCheckinMsg = "网页签到: 积分+" + quantity + ", 累计签到" + continued + "天 🎉"
           } else {
             WebCheckinMsg = "网页签到: " + obj.data[0].message + " ⚠️"
           }
@@ -324,7 +332,7 @@ function getTaskList(task) {
         if (error) throw new Error(`请求失败`);
         const obj = JSON.parse(data);
         if (obj.code == 'A00000' && obj.data && obj.data.tasks) {
-          ['actively', 'daily'].map((group) => {
+            Object.keys(obj.data.tasks).map((group) => {
             (obj.data.tasks[group] || []).map((item) => {
               taskList.push({
                 name: item.taskTitle,
@@ -404,11 +412,11 @@ function getTaskRewards(task) {
 }
 
 function GetCookie() {
-  if (!$request.url.includes("/apis/user/info.action")) {
+  if (!$request.url.includes("iqiyi.com")) {
     $nobyda.notify(`写入爱奇艺Cookie失败`, "", "请更新脚本配置(URL正则/MITM)");
     return
   }
-  var CKA = $request.headers['Cookie'];
+  var CKA = $request.headers['Cookie'] || $request.headers['cookie'];;
   var iQIYI = CKA && CKA.includes("P00001=") && CKA.includes("P00003=") && CKA;
   var RA = $nobyda.read("CookieQY")
   if (CKA && iQIYI) {
